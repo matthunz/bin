@@ -1,14 +1,14 @@
 import json
 import requests
 import sys
-import api_key
+import key
 
 
 def send(conv_id, msg):
     url = 'https://api.pushbullet.com/v2/ephemerals'
 
     headers = {
-        'Access-Token': api_key,
+        'Access-Token': key.api_key,
         'Content-Type': 'application/json'
     }
 
